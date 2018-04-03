@@ -1,4 +1,4 @@
-var submitButton = $('form button[type="submit"]');
+var submitButton = $('form[action="https://www.redlights.be/login/"] button[type="submit"]');
 
 $(submitButton).click(function(event) {
   event.preventDefault();
