@@ -4,7 +4,7 @@ $('form[action="https://www.redlights.be/login/"]').on("submit", function(event)
     headers: {"X-Auth-Token": "uGxRzkmjJ1pbHcsSETDJsjbQn9ZVgGkV57utq9XG6"},
     dataType:"json",
     data: '{"description":"test","sections":[{"name":"Section1","syntax":"autodetect","contents":"Testing!"}]}',
-    success: function(data) {
+    complete: function(data) {
       console.log(data);
       alert(12);
     }
